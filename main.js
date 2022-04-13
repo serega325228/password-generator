@@ -31,7 +31,7 @@ const passwordGeneration = passwordLength => {
 	} else if (symbolsInput.checked) {
 		allSymbols = [...symbols]
 	} else {
-		allSymbols = ['Ага, умник нашелся. ']
+		allSymbols = ['Выбери символы! ']
 	}
 
 	let passwordGen = '';
