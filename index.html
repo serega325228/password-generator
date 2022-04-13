@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Password Generation</title>
+</head>
+<body>
+	<div class="length__container cnt">
+		<h3>Выберите длину генерируемого пароля:</h3>
+		<input type="range" min='1' max='50' class='length'>
+		<div class="lengthValue"></div>
+	</div>
+	<div class="filter__container cnt">
+		<h3>Выберите символы, входящие в пароль:</h3>
+		<div class="filter">
+			<input type="checkbox" id="lettersInput">
+			<label for="lettersInput">Буквы</label><br>
+			<input type="checkbox" id="numbersInput">
+			<label for="numbersInput">Цифры</label><br>
+			<input type="checkbox" id="symbolsInput">
+			<label for="symbolsInput">Спец. символы</label>
+		</div>
+	</div>
+	<div class="btn__container cnt">
+		<button id="generationBtn">СГЕНЕРИРОВАТЬ</button>
+	</div>
+	<div class="password__container cnt">
+		<h3>Сгенерированный пароль:</h3>
+		<div class="password"></div>
+	</div>
+	<script src='main.js'></script>
+</body>
+</html>
